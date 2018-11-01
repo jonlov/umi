@@ -43,6 +43,6 @@ export default function(api, opts = {}) {
   });
 
   api.addHTMLHeadScript({
-    src: '/umi.dll.js',
+    src: api.webpackConfig.output.publicPath + '/umi.dll.js',
   });
 }
